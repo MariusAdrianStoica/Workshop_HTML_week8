@@ -1,0 +1,44 @@
+.Site-Name { grid-area: Site-Name; }
+
+.Menu-item2 { grid-area: Menu-item2; }
+
+.Menu-item3 { grid-area: Menu-item3; }
+
+.Index { grid-area: Index; }
+
+.Footer { grid-area: Footer; }
+
+.Menu-item1 { grid-area: Menu-item1; }
+
+.Header { grid-area: Header; }
+
+.Form { grid-area: Form; }
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "Site-Name Menu-item1 Menu-item2 Menu-item3 . Index"
+    ". Header Header . . ."
+    ". Form Form Form Form ."
+    ". Form Form Form Form ."
+    "Footer Footer Footer Footer Footer Footer";
+    background-color:darkgray;
+    grid-gap: 10px;
+    padding: 20px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  height: min-content;
+  border: 1cm;
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: sans-serif;
+  
+}
+
+

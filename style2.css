@@ -1,0 +1,81 @@
+
+.Site-Name { grid-area: Site-Name; background-color: #9ca49f;}
+
+.Menu-item1 { grid-area: Menu-item1; }
+
+.Menu-item2 { grid-area: Menu-item2; }
+
+.Menu-item3 { grid-area: Menu-item3; }
+
+.Login { grid-area: Login; }
+
+.Footer { grid-area: Footer; }
+
+.Main-Header { grid-area: Main-Header; }
+
+.Sub-text { grid-area: Sub-text; }
+
+.Article1 { grid-area: Article1; }
+
+.Article2 { grid-area: Article2; }
+
+.aside {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Side-content ."
+    ". . ."
+    ". . .";
+  grid-area: aside;
+}
+
+.Side-Content { grid-area: Side-Content; }
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "Site-Name Menu-item1 Menu-item2 Menu-item3 . Login"
+    "Main-Header Main-Header . . . aside"
+    "Sub-text Sub-text Sub-text Sub-text Sub-text aside"
+    "Article1 Article1 . Article2 Article2 aside"
+    "Footer Footer Footer Footer Footer Footer";
+    background-color:darkgray;
+    grid-gap: 5px;
+    padding: 20px;
+}
+
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  height: min-content;
+  border: 1cm;
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.Side-Content{
+  margin-right: 1cm;
+  width: 3cm;
+  margin-bottom: 2cm;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
