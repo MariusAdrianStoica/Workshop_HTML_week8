@@ -39,6 +39,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-items: stretch;
+  align-items: center;
   grid-template-areas:
     "Site-Name Menu-item1 Menu-item2 Menu-item3 . Login"
     "Main-Header Main-Header . . . aside"
@@ -48,6 +49,14 @@
     background-color:darkgray;
     grid-gap: 5px;
     padding: 20px;
+    width: 1024px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    
+
 }
 
 .container > div {
@@ -57,7 +66,7 @@
   border: 1cm;
   padding: 20px 0;
   font-size: 30px;
-  font-family: sans-serif;
+  
 }
 .Side-Content{
   margin-right: 1cm;

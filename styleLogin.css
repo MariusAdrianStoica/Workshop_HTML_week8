@@ -20,6 +20,7 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   justify-items: stretch;
+  align-items: center;
   grid-template-areas:
     "Site-Name Menu-item1 Menu-item2 Menu-item3 . Index"
     ". Header Header . . ."
@@ -29,6 +30,14 @@
     background-color:darkgray;
     grid-gap: 10px;
     padding: 20px;
+    width: 1024px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+
+
 }
 .container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -37,8 +46,13 @@
   border: 1cm;
   padding: 20px 0;
   font-size: 30px;
-  font-family: sans-serif;
-  
+
+}
+.Header{
+  text-transform: uppercase;
+}
+.Form{
+  border-radius: 25px;
 }
 
 
